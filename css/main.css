@@ -1,0 +1,470 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F2F2F2;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: "Nunito Sans", serif;
+}
+
+nav{
+    background-color:#FFFFFF;
+    box-shadow: 0px 0px 3px rgba(164, 164, 164, 0.33);
+   
+}
+
+
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+}
+nav .container h2{
+font-weight:800;
+font-size: 24px;
+
+}
+.hero{
+    padding: 50px 0px ;
+}
+.sunmoon{
+display: flex;
+align-items: center;
+gap: 10px;
+cursor: pointer;
+padding: 3px;
+user-select: none;
+}
+
+.sunmoon .sun{
+    display: none;
+}
+.sunmoon i{
+    cursor: pointer;
+}
+.SearchInp{
+    width: 300px;
+    border-radius: 8px;
+    border:none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 30px ;
+    background-color:#FFFFFF ;
+    box-shadow: 0px 0px 3px rgba(127, 126, 126, 0.496);
+}
+
+
+.SearchInp input{
+outline: none;
+border: none;
+font-family: "Nunito Sans", serif;
+font-size: 17px;
+
+}
+
+.SearchInp i{
+    color: #848484;
+
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 80px;
+    margin-bottom: 60px;
+}
+
+select{
+    padding: 8px 14px;
+    width: 150px;
+    border-radius: 6px ;
+    border: none;
+    outline: none;
+    box-shadow: 0px  0px 4px;
+    background-color:#FFFFFF ;
+font-family: "Nunito Sans", serif;
+
+    box-shadow: 0px 0px 3px rgba(127, 126, 126, 0.496);
+}
+
+
+
+.box{
+    border: none;
+    width:300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px rgba(127, 126, 126, 0.496);
+}
+.box img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.box.hidden{
+    display: none;
+}
+
+.box h3{
+    padding: 0px 10px 0px 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    overflow: hidden;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Arial, sans-serif;
+}
+
+.box_info{
+    padding: 0px 0px 30px 30px ; 
+    display: flex;
+
+    flex-direction: column;
+    gap: 6px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+body.dark{
+    background-color: #202C36;
+    /* color: white; */
+    transition: all 0.4s ease;
+}
+
+body.dark .info h4{
+    color: white;
+    transition: all 0.1s ease;
+}
+body.dark .box h3{
+    color: white;
+    transition: all 0.1s ease;
+}
+    
+
+body.dark nav{
+    background-color: #2B3844;
+    transition: all 0.4s ease;
+
+    
+}
+body.dark nav h2{
+   color: white;
+    transition: all 0.4s ease;
+}
+body.dark nav h4{
+    color: white;
+     transition: all 0.4s ease;
+ }
+ 
+
+body.dark .SearchInp{
+background-color: #2B3844;
+    transition: all 0.4s ease;
+
+
+
+}
+body.dark .SearchInp i{
+    color: white; 
+    transition: all 0.4s ease;
+
+    
+}
+body.dark .SearchInp input{
+    background-color: #2B3844;
+    
+    color: white; 
+    transition: all 0.4s ease;
+
+}
+
+
+body.dark .SearchInp input::placeholder {
+    color: rgba(255, 255, 255, 0.764); 
+    transition: all 0.4s ease;
+
+    
+  }
+
+  body.dark select{
+    background-color: #2B3844;
+    transition: all 0.4s ease;
+    color: white;
+  }
+
+
+  body.dark .box{
+    background-color: #2B3844;
+    transition: all 0.4s ease;
+
+    
+}
+
+body.dark .info p{
+    color: #ffffffc5;
+    transition: all 0.2s ease;
+
+    
+}
+
+body.dark .sunmoon i:nth-child(1){
+    display: none;
+    transition: all 0.4s ease;
+
+    
+}
+body.dark .sunmoon i:nth-child(2){
+    display: block;
+    color: rgb(245, 137, 98);
+    transition: all 0.4s ease;
+
+    
+}
+
+
+body.light{
+    background-color:#F2F2F2 ;
+    transition: all 0.7s ease;
+}
+
+body.nav{
+    background-color:#FFFFFF;
+    transition: all 0.7s ease;
+  
+}
+
+
+@media (  max-width: 460px) {
+
+ nav .container h2 {
+        font-size: 15px;
+            font-weight:800;
+       
+    }
+
+.sunmoon h4{
+    font-size: 10px;
+}
+
+nav .container{
+
+    padding: 10px 20px;
+}
+
+.filter{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 80px;
+    /* margin-bottom: 60px; */
+    margin: 20 auto;
+}
+
+
+
+
+
+.box{
+    width:250px;
+}
+.box img{
+    width: 100%;
+    height: 150px;
+
+}
+
+
+
+
+.info{
+    gap: 10px;
+}
+
+
+.block{
+    gap: 20px;
+}
+}
+
+
+
+.animation{
+    display: none;
+position: fixed;
+width: 100%;
+height: 100%;
+background-color:white;
+align-items: center;
+justify-content: center;
+}
+.animation img{
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.animation.active{
+    display: block;
+}
+
+.boxInfo{
+    display: none;
+    position: fixed; 
+    top: 55px; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#FFFFFF;
+    z-index: 10;
+  padding: 90px 0px ;
+
+}
+body.active .hero{
+    display: none;
+}
+
+body.active .boxInfo{
+display: block;
+}
+
+
+
+
+
+
+
+
+.boxInfo .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    /* background-color: #202C36; */
+}
+
+
+
+
+
+.cards{
+    display: flex;
+    align-items:center ;
+ /* gap: 100px; */
+ justify-content: space-between;
+ margin-bottom: 30px;
+ width: 500px;
+ /* background-color: #202C36; */
+}
+
+.cardInfo{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.cardInfo p{
+    color: #848484;
+}
+.card h1{
+    margin-bottom: 12px;
+    font-weight: 800;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.BorderCountries{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.BorderCountries button{
+width: 100px;
+padding: 4px;
+height: 20px;
+background-color: #FFFFFF;
+border: none;
+font-size: 12px;
+box-shadow: 0px 0px 10px rgba(143, 142, 142, 0.203);
+}
+
+.LoaderImg{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: transparent;
+
+}
+.LoaderImg img{
+    width: 400px;
+    height: 300px;
+}
+.back{
+    width: 70px;
+    height: 26px;
+    /* padding: 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  border: none;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body.dark .back{
+    background-color: #2B3844;
+    color: white;
+}
+body.light .boxInfo{
+    background-color: white;
+    transition: all 0.7s ease;
+}
+
+body.dark .boxInfo{
+    background-color: #202C36;
+  color: white;
+    transition: all 0.4s ease;
+}
+
+body.dark .BorderCountries button{
+    background-color: #2B3844;
+    box-shadow: none;
+    color: white;
+}
