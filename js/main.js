@@ -142,7 +142,9 @@ item.forEach((item) => {
 
 
 const languageNames = Object.values(item.languages).join(", ");
-
+const currencies = Object.values(item.currencies)
+.map(currency => currency.name)
+.join(", ");
 
   boxInfo.innerHTML = `<div class="container">
      
@@ -202,7 +204,7 @@ const languageNames = Object.values(item.languages).join(", ");
                   Currencies: 
                 </h4>
                 <p>
-                  Euro 
+                ${currencies}
                 </p>
               </div>
               <div class="cardInfo">
