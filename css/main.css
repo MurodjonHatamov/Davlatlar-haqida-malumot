@@ -20,7 +20,12 @@ body{
 nav{
     background-color:#FFFFFF;
     box-shadow: 0px 0px 3px rgba(164, 164, 164, 0.33);
-   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+  
 }
 
 
@@ -46,7 +51,6 @@ cursor: pointer;
 padding: 3px;
 user-select: none;
 }
-
 .sunmoon .sun{
     display: none;
 }
@@ -84,7 +88,7 @@ font-size: 17px;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px 80px;
+    padding: 40px 100px 0px 100px;
     margin-bottom: 60px;
 }
 
@@ -263,59 +267,7 @@ body.nav{
 }
 
 
-@media (  max-width: 460px) {
 
- nav .container h2 {
-        font-size: 15px;
-            font-weight:800;
-       
-    }
-
-.sunmoon h4{
-    font-size: 10px;
-}
-
-nav .container{
-
-    padding: 10px 20px;
-}
-
-.filter{
-    display: flex;
-    align-items: start;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 0px 80px;
-    /* margin-bottom: 60px; */
-    margin: 20 auto;
-}
-
-
-
-
-
-.box{
-    width:250px;
-}
-.box img{
-    width: 100%;
-    height: 150px;
-
-}
-
-
-
-
-.info{
-    gap: 10px;
-}
-
-
-.block{
-    gap: 20px;
-}
-}
 
 
 
@@ -349,7 +301,7 @@ justify-content: center;
     right: 0;
     bottom: 0;
     background-color:#FFFFFF;
-    z-index: 10;
+    z-index: 1;
   padding: 90px 0px ;
 
 }
@@ -371,6 +323,7 @@ display: block;
 .boxInfo .container{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 60px;
     /* background-color: #202C36; */
@@ -383,6 +336,7 @@ display: block;
 .cards{
     display: flex;
     align-items:center ;
+  
  /* gap: 100px; */
  justify-content: space-between;
  margin-bottom: 30px;
@@ -468,3 +422,94 @@ body.dark .BorderCountries button{
     box-shadow: none;
     color: white;
 }
+
+
+
+
+
+
+
+
+@media (  max-width: 460px) {
+    nav .container h2 {
+           font-size: 15px;
+               font-weight:800;
+          
+       }
+   
+   .sunmoon h4{
+       font-size: 10px;
+   }
+   
+   nav .container{
+   
+       padding: 10px 20px;
+   }
+   
+   .filter{
+       display: flex;
+       align-items: start;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 20px;
+       padding: 0px 80px;
+       /* margin-bottom: 60px; */
+       margin: 20 auto;
+   }
+   
+   
+   
+   
+   
+   .box{
+       width:350px;
+   }
+   .box img{
+       width: 100%;
+       height: 180px;
+   
+   }
+   .BorderCountries{
+    display: none;
+  
+   }
+   
+   .cards{
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+ margin-bottom: 10px;
+ width:100%;
+ padding: 0px 30px;
+   }
+.LoaderImg img{
+    width: 100%;
+    height: 300px;
+
+}
+   .info{
+       gap: 10px;
+   }
+   
+   
+   .block{
+       gap: 20px;
+   }
+.boxInfo{
+    top: -30px;
+}
+
+
+
+.cardInfo h4 {
+    flex-shrink: 0;
+    width: 150px; 
+    position: relative;
+}
+
+
+
+
+
+
+   }
