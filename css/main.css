@@ -274,6 +274,7 @@ body.nav{
 .animation{
     display: none;
 position: fixed;
+z-index: 12;
 width: 100%;
 height: 100%;
 background-color:white;
@@ -283,6 +284,7 @@ justify-content: center;
 .animation img{
     width: 400px;
     position: absolute;
+
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -507,7 +509,9 @@ body.dark .BorderCountries button{
     position: relative;
 }
 
-
+.animation img{
+    width: 200px;
+}
 
 
 
